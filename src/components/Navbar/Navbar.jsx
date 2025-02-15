@@ -72,17 +72,17 @@ const Navbar = ({handleOrderPopup}) => {
           </div>
         </div>
       </div>
-      <div data-aos='zoom-in' className='flex justify-center'>
+      <div data-aos='zoom-in' className='dark:bg-blue-950 flex justify-center'>
         <ul className='sm:flex hidden items-center gap-4'>
           {Menu.map((data)=>(
             <li key={data.id}>
-              <a href={data.link} className='text-black inline-block px-4 hover:text-primary duration-200'>
+              <a href={data.link} className='text-black inline-block px-4 hover:text-primary duration-200 dark:text-white'>
                 {data.name}
               </a>
             </li>
           ))}
           <li className='group relative cursor-pointer'>
-            <a href="#" className='text-black flex items-center gap-[2px] py-2'>Trending Products
+            <a href="#" className='text-black flex items-center gap-[2px] py-2 dark:text-white'>Trending Products
               <span><FaCaretDown className='transition-all duration-200 group-hover:rotate-180' /></span>
             </a>
             <div className='absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white p-2 text-black shadow-md'>
