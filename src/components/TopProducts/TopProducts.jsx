@@ -21,14 +21,14 @@ const ProductsData = [
         id: 3,
         img: Img3,
         title: "Formal Shirts",
-        description: "We have the Fomral Shirts Category best suited for Men ."
+        description: "We have the Formal Shirts Category best suited for Men ."
     },
 ]
 
 const TopProducts = ({handleOrderPopup}) => {
   return (
-    <div className='container'>
-        <div className='text-left mb-24'>
+    <div className='container mt-20'>
+        <div className='text-center mb-24'>
             <p data-aos='fade-up' className='text-sm text-primary'>Top Rated Products for You</p>
             <h1 data-aos='fade-up' className='text-3xl font-bold'>Best Products</h1>
             <p data-aos='fade-up' className='text-xs text-gray-400'>We provide the best quality of products considering all the factors essential for the customers. Do not miss out the opportunity to grab them.</p>
@@ -40,6 +40,7 @@ const TopProducts = ({handleOrderPopup}) => {
                                 <img src={data.img} className='max-w-[140px] block mx-auto transform -translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md' />
                             </div>
                             <div className='w-full flex items-center justify-center gap-1'>
+                                <FaStar className='text-yellow-500' />
                                 <FaStar className='text-yellow-500' />
                                 <FaStar className='text-yellow-500' />
                                 <FaStar className='text-yellow-500' />
