@@ -14,22 +14,22 @@ const Menu = [
   {
     id: 2,
     name: "Top Rated",
-    link: "/#services",
+    link: "/toprated",
   },
   {
     id: 3,
     name: 'Kids Wear',
-    link: '/#',
+    link: '/kidswear',
   },
   {
     id: 3,
     name: "Mens Wear",
-    link: '/#',
+    link: '/menswear',
   },
   {
     id: 3,
     name: 'Electronics',
-    link: "/#",
+    link: "/electronics",
   },
 ];
 
@@ -89,7 +89,8 @@ const Navbar = ({handleOrderPopup}) => {
               <ul>{DropdownList.map((data) => {
                 <li key={data.id}>
                   <a href={data.link} className='inline-block w-full rounded-md p-2 hover:bg-primary/20'>
-                  {data.name}</a>
+                    {data.name}
+                  </a>
                 </li>
               })}</ul>
             </div>
@@ -100,4 +101,4 @@ const Navbar = ({handleOrderPopup}) => {
   )
 }
 
-export default Navbar
+export default Navbar;
